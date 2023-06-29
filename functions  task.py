@@ -178,5 +178,61 @@ c1.withdraw(1000)
 c1.deposite(200)
 c1.view_balance()
 c1.clint_detail()
+--------------------------------------------
 
+Task
+
+class Game:
+    def __init__(self):
+        while True:
+            print(''' welcome in our game , Enter game number :
+        1: Filter by Length
+        2: Even Odd Range
+        3: To Exit...''')
+
+            user_choice = int(input('Enter Game Number : '))
+            if user_choice == 3:
+                break
+            
+            elif user_choice ==1:
+                self.filter_by_length()
+
+
+            elif user_choice ==2:
+                self.even_odd_range()
+
+            play_again = input('press any key to play again , n to exit')
+
+            if play_again == 'n':
+                break
+        
+    def filter_by_length(self):
+        names = input('Enter Names : ')# create input function to enter names
+
+        names_list = names.split(',')# seperate names by using split and put it in list
+        length = int(input('Enter Length : '))# create input function to enter length
+        for n in names_list:
+            if len(n) >= length:
+                print(n)
+
+    '''
+       Second game: enter a start and end to get 2 lists of ( even and odd )
+    '''
+
+    def even_odd_range(self):
+        start = int(input(' enter start : '))
+        end = int(input(' enter end : '))
+        even = []
+        odd = []
+        for x in range(start,end+1):
+            if x%2==0: # even numbers
+                even.append(x)# put even numbers in list
+
+            else:
+                odd.append(x) # put odd numbers in list
+
+        print(even)
+        print(odd)
+
+g1 = Game()
 
