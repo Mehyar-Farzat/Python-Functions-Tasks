@@ -102,14 +102,31 @@ age = int(input(' Please Enter your age in years : '))
 print(' Youre age in days is : ' , age_in_days(age))
 -------------------------------------------------------
 
-Task
+ # Convert a minutes to seconds
 
-'''
-create student
-add mark
-get avg
+ # Method 1
 
-'''
+def min_to_sec(minutes):
+    sec = minutes * 60
+    return sec
+    
+minutes = int(input('Enter the Number of  minutes : '))
+print(' Convert the minutes to seconds : ' , min_to_sec(minutes))
+
+
+# Method 2
+    
+def min_to_sec(minutes):
+    sec = minutes * 60
+    return(sec)
+
+a = min_to_sec(5)
+print(a)
+------------------------------------
+
+# create student
+# add mark
+# get avg
 
 class student:
     def __init__(self,name):
@@ -143,17 +160,14 @@ s2.add_mark(10)
 s2.get_avg()
 ---------------------------------------
 
-Task
+# Bank
+   # - create accoutn : name , age , gendoe
+   # - deposite
+   # - withdraw
+   # - view balance
+   # - show all details
 
-'''
-Bank
-    - create accoutn : name , age , gendoe
-    - deposite
-    - withdraw
-    - view balance
-    - show all details
 
-'''
 
 class Clint:
 
@@ -236,9 +250,9 @@ class Game:
             if len(n) >= length:
                 print(n)
 
-    '''
-       Second game: enter a start and end to get 2 lists of ( even and odd )
-    '''
+    
+      # Second game: enter a start and end to get 2 lists of ( even and odd )
+    
 
     def even_odd_range(self):
         start = int(input(' enter start : '))
