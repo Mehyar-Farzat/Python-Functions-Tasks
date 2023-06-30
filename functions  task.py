@@ -81,6 +81,27 @@ and can only be accessed within that function.
 function and can be accessed from anywhere in the code.
 
 --------------------------------------------------------
+
+#Create a function that takes the age in years and returns the age in days.
+
+# Method 1
+
+def age_in_days(age):
+    days = age * 365
+    print(days)
+
+age_in_days(20)
+
+# Method 2
+
+def age_in_days(age):
+    days = age * 365
+    return days
+
+age = int(input(' Please Enter your age in years : '))
+print(' Youre age in days is : ' , age_in_days(age))
+-------------------------------------------------------
+
 Task
 
 '''
