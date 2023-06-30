@@ -124,6 +124,75 @@ a = min_to_sec(5)
 print(a)
 ------------------------------------
 
+# Create a function that takes length and width
+# and finds the perimeter of a rectangle
+
+# Method 1
+def perimeter_of_rectangle(l ,w):
+    p = l*2 + w*2
+    print(p)
+
+perimeter_of_rectangle(6 ,7)
+
+# Method 2
+
+def per_of_rect(length,width):
+    p = (length*2)+(width*2)
+    return(p)
+
+length = int(input('Enter a Length : '))
+width = int(input('Enter a width : '))
+print('The perimeter of Rectangle is : ' , per_of_rect(length,width))
+
+# method 3
+def find_perimeter(length, width):
+    p = length*2 + width*2
+    return(p)
+
+a = find_perimeter(6,7)
+print(a)
+----------------------------------------------
+
+# Luke Skywalker has family and friends. Help him remindthem who is who.
+# return the relation of that person to Luke.
+
+# Method 1
+class relations:
+    def relation_to_luke(self,name):
+        if name == 'Darth Vader':
+            return 'Father'
+        elif name == 'Leia':
+            return 'Sister'
+        elif name == 'Han':
+            return 'Brother in law'
+        elif name == 'R2D2':
+            return 'Droid'
+        else:
+            return 'Friend'
+
+s = relations()
+name = input('Enter a name : ')
+print('Hi Luke,I am',name,'.I am your',s.relation_to_luke(name))
+--------------------------------------
+
+# Method 2
+
+def relation_to_luke(name):
+    if name == 'Darth Vader':
+        return 'Father'
+    elif name == 'Leia':
+        return 'Sister'
+    elif name == 'Han':
+        return 'Brother in Law'
+    elif name == 'R2D2':
+        return 'Droid'
+    else:
+        return 'Frind'
+name = input('Enter a Name : ')
+print(f'Hi Luke, I am {name}.I am your {relation_to_luke(name)}.')
+
+-------------------------------------------
+
 # create student
 # add mark
 # get avg
